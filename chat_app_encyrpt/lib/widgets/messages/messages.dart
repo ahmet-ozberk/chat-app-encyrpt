@@ -1,3 +1,4 @@
+import 'package:chat_app_encyrpt/encrypt/decoding.dart';
 import 'package:chat_app_encyrpt/widgets/messages/message_bubble.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -31,7 +32,10 @@ class Messages extends StatelessWidget {
               reverse: true,
               itemCount: ch?.length,
               itemBuilder: (context, index) => MessageBubble(
-                  ch?[index]['text'], ch?[index]['userId'] == future.data.uid,key: ValueKey(ch?[index].id),),
+                decoding(encryptionMessage: ch?[index]['text']),
+                ch?[index]['userId'] == future.data.uid,
+                key: ValueKey(ch?[index].id),
+              ),
             );
           },
         );

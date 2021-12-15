@@ -11,7 +11,10 @@ class ChatScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Chat'),
+        title: Text(
+          "Mesajlaşma Uygulaması",
+          style: TextStyle(color: Colors.black87),
+        ),
         actions: [
           TextButton(
             onPressed: () {
@@ -19,12 +22,13 @@ class ChatScreen extends StatelessWidget {
             },
             child: const Icon(
               Icons.exit_to_app_rounded,
-              color: Colors.white,
+              color: Colors.black,
             ),
           ),
         ],
       ),
       body: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 5),
         child: Column(
           children: [Expanded(child: Messages()), NewMessage()],
         ),
