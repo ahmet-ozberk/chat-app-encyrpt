@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "28615688293",
+    "project_id": "chat-app-encyrpt",
+    "storage_bucket": "chat-app-encyrpt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28615688293:android:efb31b13b878b551e5868c",
+        "android_client_info": {
+          "package_name": "com.example.chat_app_encyrpt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "28615688293-r1651nii2l14irpbvesmejlg5t151jum.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHlzm2kztyUptRP7YsmD1E5n4sasgevKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "28615688293-r1651nii2l14irpbvesmejlg5t151jum.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
