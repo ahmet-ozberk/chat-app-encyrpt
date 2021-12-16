@@ -31,6 +31,7 @@ class _NewMessageState extends State<NewMessage> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 50,
       margin: const EdgeInsets.only(bottom: 15, left: 10, right: 10),
       padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 8),
       decoration: BoxDecoration(
@@ -41,9 +42,10 @@ class _NewMessageState extends State<NewMessage> {
           end: Alignment.centerRight,
           colors: [
             Colors.grey.shade200,
-            Colors.grey.shade400,
+            Colors.grey.shade200,
           ],
         ),
+        border: Border.all(color: Colors.black45),
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.2),
@@ -76,10 +78,14 @@ class _NewMessageState extends State<NewMessage> {
           ),
           Container(
             decoration: BoxDecoration(
-                shape: BoxShape.circle, color: Colors.orange.shade800),
-            child: IconButton(
-              icon: const Icon(Icons.send, color: Colors.white, size: 20),
-              onPressed: _enteredMessage.trim().isEmpty ? null : _sendMessage,
+                shape: BoxShape.circle,
+                border: Border.all(color: Colors.orange.shade800),
+                color: Colors.white),
+            child: Center(
+              child: IconButton(
+                icon: const Icon(Icons.send, color: Colors.orange, size: 17),
+                onPressed: _enteredMessage.trim().isEmpty ? null : _sendMessage,
+              ),
             ),
           ),
         ],
